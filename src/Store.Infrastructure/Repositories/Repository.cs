@@ -15,9 +15,7 @@ namespace Store.Infrastructure.Repositories
 
         public Repository(StoreContext context)
         {
-            var optionsBuilder = new DbContextOptionsBuilder();
-            optionsBuilder.UseSqlite("Filename=./blog.db");
-            this.context = new StoreContext()
+            this.context = context;
         }
 
         protected DbSet<TEntity> Set

@@ -10,6 +10,9 @@ namespace Store.Infrastructure.Repositories
 {
     public class ProductRepository : Repository<Product>, IProductRepository
     {
-        public 
+        public ProductRepository(StoreContext context):base(context)
+        {
+
+        }
     }
 }
