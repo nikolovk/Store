@@ -3,7 +3,8 @@
     'use strict';
     angular.module('app', [
        'ngRoute',
-	   'app.services'
+        'app.services',
+       'app.product'
     ]);
 })();
 

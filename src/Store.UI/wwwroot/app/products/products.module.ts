@@ -1,5 +1,5 @@
 ﻿((): void => {
     'use strict';
 
-    angular.module('app.account', []);
+    angular.module('app.product', []);
 })();

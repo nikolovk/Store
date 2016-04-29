@@ -4,15 +4,23 @@
     <meta charset="utf-8" />
     <title>Store</title>
     <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services/services.module.js"></script>
+    <script src="app/services/product-data.service.js"></script>
+    <script src="app/products/products.module.js"></script>
+    <script src="app/products/product.controller.js"></script>
 </head>
-<body>
+<body ng-controller="app.product.ProductController as vm">
     <h1>Products</h1>
     <table>
         <tr>
             <th>Product</th>
             <th>Price</th>
+        </tr>
+        <tr ng-repeat="product in vm.products">
+            <td>{{product.Name}}</td>
+            <td>{{product.Price}}</td>
         </tr>
     </table>
 </body>
