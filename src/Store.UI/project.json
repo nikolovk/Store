@@ -17,8 +17,7 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
     "Store.Core": "1.0.0-*",
-    "Store.Infrastructure": "1.0.0-*"
-  },
+    "Store.Infrastructure": "1.0.0-*"  },
 
   "commands": {
     "web": "Microsoft.AspNet.Server.Kestrel"

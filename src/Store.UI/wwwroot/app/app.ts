@@ -1,9 +1,10 @@
-﻿/// <reference path="../lib/definitelytyped/angularjs/angular.d.ts" />
+﻿/// <reference path="../lib/definitelytyped/angularjs/angular-route.d.ts" />
+/// <reference path="../lib/definitelytyped/angularjs/angular.d.ts" />
 ((): void => {
     'use strict';
-    angular.module('app',
+    angular.module('app', [
        'ngRoute',
 	   'app.services'
-    );
+    ]);
 })();
 
