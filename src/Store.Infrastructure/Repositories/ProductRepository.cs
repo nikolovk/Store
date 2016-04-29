@@ -14,5 +14,11 @@ namespace Store.Infrastructure.Repositories
         {
 
         }
+
+        public Product GetById(int id)
+        {
+            Product product = this.Set.FirstOrDefault<Product>(x => x.ProductId == id);
+            return product;
+        }
     }
 }

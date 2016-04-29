@@ -33,11 +33,11 @@ namespace Store.UI
             // Add framework services.
             services.AddMvc();
 
-            var connection = @"Server=.\SQLEXPRESS;Database=StoreTest;Trusted_Connection=True;";
+            //var connection = @"Server=.\SQLEXPRESS;Database=StoreTest;Trusted_Connection=True;";
 
             services.AddEntityFramework()
                 .AddSqlServer()
-                .AddDbContext<StoreContext>(options => options.UseSqlServer(connection));
+                .AddDbContext<StoreContext>(options => options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
 
             // Add application services.
             services.AddTransient<IProductRepository, ProductRepository>();

@@ -7,7 +7,11 @@
   "licenseUrl": "",
   "frameworks": {
     "net451": {
-      
+      "dependencies": { "System.Runtime": "4.0.0.0" },
+
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10.0"
+      }
     },
     "dotnet5.4": {
       "dependencies": {

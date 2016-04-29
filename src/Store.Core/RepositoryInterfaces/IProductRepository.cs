@@ -9,5 +9,6 @@ namespace Store.Core.RepositoryInterfaces
 {
     public interface IProductRepository: IRepository<Product>
     {
+        Product GetById(int id);
     }
 }
