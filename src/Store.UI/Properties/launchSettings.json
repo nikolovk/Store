@@ -11,11 +11,11 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/products",
+      "launchUrl": "index.html",
       "environmentVariables": {
         "Hosting:Environment": "Development"
       },
-      "sdkVersion": "dnx-clr-win-x86.1.0.0-rc1-update1"
+      "sdkVersion": "dnx-coreclr-win-x86.1.0.0-rc1-update1"
     },
     "web": {
       "commandName": "web",
