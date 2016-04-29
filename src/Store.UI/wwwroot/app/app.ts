@@ -2,7 +2,8 @@
 ((): void => {
     'use strict';
     angular.module('app',
-
+       'ngRoute',
+	   'app.services'
     );
 })();
 
